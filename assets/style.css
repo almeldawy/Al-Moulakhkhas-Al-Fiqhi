@@ -1,0 +1,52 @@
+/* Logo du site : assets/logo.png (utilisé dans l'en-tête et sur l'accueil ; taille donnée par les classes w-* h-*) */
+.site-logo { display: inline-block; flex-shrink: 0; border-radius: 9999px; background: url('logo.png') center / cover no-repeat; }
+
+.font-arabic { font-family: 'Amiri', 'Traditional Arabic', serif; }
+[dir="rtl"], .dir-rtl { direction: rtl; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.05); }
+::-webkit-scrollbar-thumb { background: #ffb344; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #ffcb33; }
+
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+details[open] > summary .chev { transform: rotate(90deg); }
+.chev { display: inline-block; transition: transform .2s; }
+
+.soon { opacity: .5; cursor: default; }
+html { scroll-behavior: smooth; }
+
+/* Contenu des chapitres (issu de Word) */
+.prose-fiqh > * + * { margin-top: 1rem; }
+.prose-fiqh h1, .prose-fiqh h2, .prose-fiqh h3, .prose-fiqh h4 { font-weight: 700; color: #004a6b; margin-top: 1.75rem; }
+.dark .prose-fiqh h1, .dark .prose-fiqh h2, .dark .prose-fiqh h3, .dark .prose-fiqh h4 { color: #7fd0f5; }
+.prose-fiqh h2 { font-size: 1.35rem; } .prose-fiqh h3 { font-size: 1.15rem; } .prose-fiqh h4 { font-size: 1.05rem; }
+.prose-fiqh strong { font-weight: 700; color: #00263f; } .dark .prose-fiqh strong { color: #f1f5f9; }
+.prose-fiqh a { color: #b8700c; text-decoration: underline; }
+.prose-fiqh ul { list-style: disc; padding-left: 1.5rem; } .prose-fiqh ol { list-style: decimal; padding-left: 1.5rem; }
+.prose-fiqh li + li { margin-top: .5rem; }
+.prose-fiqh li > p { margin: 0; }
+.prose-fiqh blockquote { border-left: 4px solid #ffb344; background: rgba(255, 244, 214, .55); padding: .6rem 1rem; border-radius: 0 .5rem .5rem 0; }
+.dark .prose-fiqh blockquote { background: rgba(10, 51, 80, .6); }
+.prose-fiqh blockquote p { margin: 0; }
+.prose-fiqh [dir="rtl"] { font-family: 'Amiri', 'Traditional Arabic', serif; font-size: 1.3em; line-height: 2; unicode-bidi: isolate; }
+.prose-fiqh p.ar { direction: rtl; text-align: right; font-family: 'Amiri', 'Traditional Arabic', serif; font-size: 1.5rem; line-height: 2.2; color: #00263f; background: #f4fafd; border-right: 4px solid #ffb344; padding: .75rem 1rem; border-radius: .75rem; }
+.dark .prose-fiqh p.ar { color: #f1f5f9; background: #001d31; }
+.prose-fiqh sup { font-size: .75em; vertical-align: super; }
+.prose-fiqh table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.prose-fiqh th, .prose-fiqh td { border: 1px solid #cbd5e1; padding: .5rem .75rem; text-align: left; vertical-align: top; }
+.dark .prose-fiqh th, .dark .prose-fiqh td { border-color: #334155; }
+.prose-fiqh th { background: #eaf6fc; } .dark .prose-fiqh th { background: #062741; }
+.prose-fiqh .footnotes { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #cbd5e1; font-size: .85rem; color: #475569; }
+.dark .prose-fiqh .footnotes { border-color: #334155; color: #94a3b8; }
+.prose-fiqh .footnotes hr { display: none; }
+.prose-fiqh .footnotes ol { list-style: decimal; }
+.prose-fiqh .footnotes li { scroll-margin-top: 6rem; }
+.prose-fiqh sup, .prose-fiqh [role="doc-noteref"] { scroll-margin-top: 6rem; }
+
+/* Tableaux de répartition des héritages : présentation proche du livre (lecture de droite à gauche, cadre double, centrés) */
+.prose-fiqh table.farid { direction: rtl; width: auto; min-width: 16rem; max-width: 100%; margin: 1.25rem auto; border: 4px double #00263f; font-size: 1rem; }
+.prose-fiqh table.farid th, .prose-fiqh table.farid td { border: 1px solid #00263f; text-align: center; vertical-align: middle; padding: .4rem 1rem; background: transparent; font-weight: 600; }
+.prose-fiqh table.farid thead th { border: 0; border-bottom: 1px solid #00263f; font-weight: 700; color: #004a6b; background: transparent; }
+.dark .prose-fiqh table.farid, .dark .prose-fiqh table.farid th, .dark .prose-fiqh table.farid td { border-color: #7fd0f5; }
